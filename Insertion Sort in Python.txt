@@ -1,0 +1,12 @@
+arr=[5,4,10,1,600,2,-11,0,89,2]
+for i in range(1,len(arr)):
+    j=i-1
+    temp=arr[i]
+    while(j>=0 and temp<arr[j]):
+        arr[j+1]=arr[j]
+        j-=1
+    arr[j+1]=temp
+    print(arr)
+    #arr[i]=arr[j+1]
+    #arr[j+1]=temp
+print(arr)
